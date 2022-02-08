@@ -2,7 +2,7 @@ public class Employee {
     public String name;
     final private double rate;
     private int hours;
-    private PayStrategy payStrategy;
+    private PayStrategy payStrategy = null;
 
     public Employee(String name, double rate, int hours) {
         this.name = name;

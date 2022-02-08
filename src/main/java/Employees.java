@@ -1,10 +1,13 @@
 import java.util.ArrayList;
 import java.util.List;
 import java.util.NoSuchElementException;
-import java.util.stream.Stream;
 
 public class Employees {
-    final private List<Employee> employees = new ArrayList<>();
+    final private List<Employee> employees;
+
+    public Employees() {
+        employees = new ArrayList<>();
+    }
 
     public void addEmployee(Employee newEmployee) {
         employees.add(newEmployee);
