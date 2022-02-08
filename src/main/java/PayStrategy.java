@@ -1,3 +1,3 @@
 interface PayStrategy {
-    int pay(int hours, float rate);
+    double pay(int hours, double rate);
 }

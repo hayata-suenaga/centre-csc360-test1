@@ -1,10 +1,10 @@
 public class Employee {
     public String name;
-    private final float rate;
+    final private double rate;
     private int hours;
     private PayStrategy payStrategy;
 
-    public Employee(String name, float rate, int hours) {
+    public Employee(String name, double rate, int hours) {
         this.name = name;
         this.rate = rate;
         this.hours = hours;
@@ -18,7 +18,7 @@ public class Employee {
         payStrategy = newPayStrategy;
     }
 
-    public float pay() {
+    public double pay() {
         return payStrategy.pay(hours, rate);
     }
 }
