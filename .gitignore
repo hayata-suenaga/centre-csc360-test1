@@ -1,0 +1,6 @@
+# Intellij config files
+/.idea
+**/**.iml
+
+# Comfiled files
+/out
